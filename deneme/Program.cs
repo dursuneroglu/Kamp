@@ -38,10 +38,54 @@ namespace deneme
             //Console.WriteLine(totalPrice);
             //Console.ReadLine();
             #endregion
+            //int k=0;
+            //for (int i = 1; i <= 50; i++)
+            //{
+            //    if (i % 7 == 0) 
+            //    { 
+            //        Console.WriteLine( i);
+            //        k++;
+            //    }
 
-            int sayi;
-            Console.Write("sayı girişi:");
-            sayi = Convert.ToInt32(Console.ReadLine());
+            //}
+            //Console.WriteLine(k);
+
+            //int bacterium = 1;
+            //for (int i = 1; i <= 24; i++)
+            //{
+            //    bacterium *= 2;
+
+            //    Console.WriteLine(i+" Saatin sonunda: "+ bacterium);
+            //}
+
+            #region while döngüsü
+
+            //int i = 1;
+            //while (i<=100)
+            //{
+            //    if (i % 5 == 0) 
+            //    {
+            //        Console.WriteLine(i);
+            //    }
+            //    i++;
+            //}
+
+            #endregion
+
+            Console.WriteLine( "Sayı giriniz: ");
+            int number = int.Parse(Console.ReadLine());
+            int ones, tens, hundreds;
+            int sum;
+
+            ones = number % 10;
+            tens = (number % 100) / 10;
+            hundreds = number / 100;
+            sum=ones+tens+hundreds;
+            Console.WriteLine(ones);
+            Console.WriteLine(tens);
+            Console.WriteLine(hundreds);
+            Console.WriteLine(sum);
+
             Console.ReadKey();
         }
     }
